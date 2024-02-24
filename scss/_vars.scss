@@ -1,0 +1,24 @@
+// Colors
+$color-background: #191411;
+$color-block-background: #211a16;
+$color-text-additional: #757575;
+$color-border: #353535;
+$color-white: #ffffff;
+$color-red: #d3320f;
+$yellow-gradient: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+$yellow-gradient-hover: linear-gradient(96deg, #AC6115 0%, #9E7A19 100%);
+
+// Fonts
+$font-main: "Gilroy", sans-serif;
+$font-additional: "Merriweather", sans-serif;
+
+// Fonts import
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../assets/fonts/Merriweather-Black.ttf");
+}

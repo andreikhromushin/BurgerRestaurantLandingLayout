@@ -1,0 +1,48 @@
+html {
+  font-family: $font-main;
+}
+
+body {
+  background: $color-background;
+  color: $color-white;
+
+  section {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section-title {
+      text-align: center;
+      font-family: $font-additional;
+      font-size: 64px;
+      line-height: 80px;
+      letter-spacing: 1.92px;
+      text-transform: uppercase;
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .button {
+    border-radius: 8px;
+    background: $yellow-gradient;
+    width: 260px;
+    height: 62px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: $color-background;
+    font-size: 18px;
+
+    &:hover {
+      background: $yellow-gradient-hover;
+    }
+  }
+}

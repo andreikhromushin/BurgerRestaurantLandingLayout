@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>БУРГЕР ХАУС</title>
+  <link rel="stylesheet" href="./css/styles.min.css" />
+  <script src="./js/index.js" defer></script>
+</head>
+<body>
+
+<section id="main-section">
+  <header>
+    <div class="container">
+      <img src="./assets/logo.svg" alt="logo">
+
+      <nav>
+        <ul>
+          <li>
+            <a data-link="benefits-section">Почему у нас</a>
+          </li>
+          <li>
+            <a data-link="menu-section">Меню бургеров</a>
+          </li>
+          <li>
+            <a data-link="order-section">Оформление заказа</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="select" id="change-language" title="Сменить язык">RU</div>
+      <div class="select" id="change-currency" title="Изменить валюту">$</div>
+    </div>
+  </header>
+
+  <section class="main-content">
+    <div class="container">
+      <div class="main-info">
+        <span>Новое меню</span>
+        <h1>Бургер Чеддер</h1>
+        <p>
+          Мы обновили наше меню, спешите попробовать сезонные новинки и насладиться отличным вкусом
+          наших бургеров. Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.
+        </p>
+        <button class="button" id="main-section-action">Смотреть меню</button>
+      </div>
+      <img src="./assets/img/main-burger.png" alt="main-burger">
+    </div>
+  </section>
+</section>
+
+<section id="benefits-section">
+  <div class="container">
+    <div class="section-title">Почему нас выбирают?</div>
+    <div class="benefits-items">
+      <div class="benefits-item">
+        <img src="./assets/img/benefits-section/burger.png" alt="burger">
+        <div class="benefits-item-title">Авторские рецепты</div>
+        <div class="benefits-item-text">
+          Наши бургеры обладают уникальным сочетанием вкусов и не похожи ни на какие другие. Мы тщательно отбираем
+          лучшие ингредиенты и сочетания вкусов для нашего меню.
+        </div>
+      </div>
+
+      <div class="benefits-item">
+        <img src="./assets/img/benefits-section/meat.png" alt="meat">
+        <div class="benefits-item-title">Мраморная говядина</div>
+        <div class="benefits-item-text">
+          Для наших бургеров мы используем отборную 100% мраморную говядину, которую закупаем исключительно у фермеров.
+          Мы уверены в качестве нашего мяса.
+        </div>
+      </div>
+
+      <div class="benefits-item">
+        <img src="./assets/img/benefits-section/food-truck.png" alt="food-truck">
+        <div class="benefits-item-title">Быстрая доставка</div>
+        <div class="benefits-item-text">
+          Мы доставляем в пределах города за 30 минут, а если не успеем — доставка бесплатно. Мы тщательно упаковываем
+          наши бургеры, чтобы по дороге они не остыли.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu-section">
+  <div class="container">
+    <div class="section-title">Выберите свой бургер</div>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="./assets/img/menu-section/cheddar-bacon.png" alt="cheddar-bacon">
+        <div class="menu-item-title">Бургер чеддер & бекон</div>
+        <div class="menu-item-text">
+          Котлета из говядины криспи, булочка, томат, сыр Чеддер, грудинка, лук красный, салат айсбер, майонез, кетчуп,
+          сырный соус
+        </div>
+        <div class="menu-item-extra">
+          <div>
+            <div class="menu-item-price" data-base-price="8">8 $</div>
+            <div class="menu-item-weight">360 гр</div>
+          </div>
+          <button class="button menu-order-button">
+            <span>Заказать</span>
+            <span>
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                    fill="#191411" />
+                </svg>
+              </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/img/menu-section/bbq-bacon-chicken.png" alt="bbq-bacon-chicken">
+        <div class="menu-item-title">BBQ с беконом и курицей</div>
+        <div class="menu-item-text">
+          Булочка бриошь с кунжутом, куриная котлета, сыр чеддер, томат, огурец маринованный, лук маринованный, салат
+          Ромен, бекон, соус BBQ
+        </div>
+        <div class="menu-item-extra">
+          <div>
+            <div class="menu-item-price" data-base-price="7">7 $</div>
+            <div class="menu-item-weight">390 гр</div>
+          </div>
+          <button class="button menu-order-button">
+            <span>Заказать</span>
+            <span>
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                    fill="#191411" />
+                </svg>
+              </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/img/menu-section/bacon-cheeseburger.png" alt="bacon-cheeseburger">
+        <div class="menu-item-title">Бекон чизбургер</div>
+        <div class="menu-item-text">
+          Булочка для бургера, говяжья котлета, грудинка, помидор, огурец маринованный, сыр, сырный соус, кетчуп, зелень
+        </div>
+        <div class="menu-item-extra">
+          <div>
+            <div class="menu-item-price" data-base-price="8">8 $</div>
+            <div class="menu-item-weight">220 гр</div>
+          </div>
+          <button class="button menu-order-button">
+            <span>Заказать</span>
+            <span>
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                    fill="#191411" />
+                </svg>
+              </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/img/menu-section/veggie.png" alt="veggie">
+        <div class="menu-item-title">Вегги бургер</div>
+        <div class="menu-item-text">
+          Булочка для бургера, вегетарианская котлета, красный лук, сыр, свежий томат, соус барбекю, соус сырный, салат
+          айсберг
+        </div>
+        <div class="menu-item-extra">
+          <div>
+            <div class="menu-item-price" data-base-price="8">8 $</div>
+            <div class="menu-item-weight">280 гр</div>
+          </div>
+          <button class="button menu-order-button">
+            <span>Заказать</span>
+            <span>
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                    fill="#191411" />
+                </svg>
+              </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/img/menu-section/weepy-joe.png" alt="weepy-joe">
+        <div class="menu-item-title">Плаксивый Джо</div>
+        <div class="menu-item-text">
+          Булочка для бургера, говяжья котлета, грудинка, помидор, огурец маринованный, красный лук, сыр, перец
+          халапеньо, кетчуп, зелень
+        </div>
+        <div class="menu-item-extra">
+          <div>
+            <div class="menu-item-price" data-base-price="7">7 $</div>
+            <div class="menu-item-weight">380 гр</div>
+          </div>
+          <button class="button menu-order-button">
+            <span>Заказать</span>
+            <span>
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                    fill="#191411" />
+                </svg>
+              </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/img/menu-section/double-cheeseburger.png" alt="double-cheeseburger">
+        <div class="menu-item-title">Двойной чизбургер</div>
+        <div class="menu-item-text">
+          Булочка для бургера, две говяжьи котлеты, двойной сыр чеддар, огурец маринованный, криспи лук, кетчуп, соус
+          сырный, горчица, зелень
+        </div>
+        <div class="menu-item-extra">
+          <div>
+            <div class="menu-item-price" data-base-price="11">11 $</div>
+            <div class="menu-item-weight">400 гр</div>
+          </div>
+          <button class="button menu-order-button">
+            <span>Заказать</span>
+            <span>
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17 18.5C17.5304 18.5 18.0391 18.7107 18.4142 19.0858C18.7893 19.4609 19 19.9696 19 20.5C19 21.0304 18.7893 21.5391 18.4142 21.9142C18.0391 22.2893 17.5304 22.5 17 22.5C16.4696 22.5 15.9609 22.2893 15.5858 21.9142C15.2107 21.5391 15 21.0304 15 20.5C15 19.39 15.89 18.5 17 18.5ZM1 2.5H4.27L5.21 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5C21 5.67 20.95 5.84 20.88 6L17.3 12.47C16.96 13.08 16.3 13.5 15.55 13.5H8.1L7.2 15.13L7.17 15.25C7.17 15.3163 7.19634 15.3799 7.24322 15.4268C7.29011 15.4737 7.3537 15.5 7.42 15.5H19V17.5H7C6.46957 17.5 5.96086 17.2893 5.58579 16.9142C5.21071 16.5391 5 16.0304 5 15.5C5 15.15 5.09 14.82 5.24 14.54L6.6 12.09L3 4.5H1V2.5ZM7 18.5C7.53043 18.5 8.03914 18.7107 8.41421 19.0858C8.78929 19.4609 9 19.9696 9 20.5C9 21.0304 8.78929 21.5391 8.41421 21.9142C8.03914 22.2893 7.53043 22.5 7 22.5C6.46957 22.5 5.96086 22.2893 5.58579 21.9142C5.21071 21.5391 5 21.0304 5 20.5C5 19.39 5.89 18.5 7 18.5ZM16 11.5L18.78 6.5H6.14L8.5 11.5H16Z"
+                    fill="#191411" />
+                </svg>
+              </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="order-section">
+  <div class="container">
+    <div class="section-title">Оформление заказа</div>
+    <img src="./assets/img/order-section/burger-order.png" alt="burger-order">
+    <div class="order-form">
+      <div class="order-form-text">
+        Заполните все данные и наш менеджер свяжется с вами для подтверждения заказа
+      </div>
+      <div class="order-form-inputs">
+        <div class="input-wrapper">
+          <input id="order-input" type="text" placeholder="Ваш заказ">
+        </div>
+        <div class="input-wrapper">
+          <input id="name-input" type="text" placeholder="Ваше имя">
+        </div>
+        <div class="input-wrapper">
+          <input id="phone-input" type="number" placeholder="Ваш телефон">
+        </div>
+        <button class="button" id="order-section-action">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <img src="./assets/logo.svg" alt="logo">
+    <div class="rights">Все права защищены</div>
+  </div>
+</footer>
+
+<button id="resetScrollButton">
+  <svg width="24" height="14" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M23.7603 11.4504L12.5529 0.240634C12.3928 0.0802959 12.2086 0 12.0002 0C11.7918 0 11.6072 0.0802959 11.447 0.240634L0.240566 11.4504C0.0800202 11.611 0 11.7953 0 12.0038C0 12.2123 0.0802729 12.3968 0.240566 12.557L1.44272 13.7595C1.60302 13.9198 1.78748 13.9999 1.99587 13.9999C2.20426 13.9999 2.38873 13.9198 2.54902 13.7595L12.0002 4.3058L21.4516 13.76C21.6119 13.9204 21.7964 14 22.0045 14C22.2132 14 22.3977 13.9199 22.5579 13.76L23.7602 12.5571C23.9204 12.3969 24 12.2123 24 12.0039C24.0001 11.7953 23.9205 11.6108 23.7603 11.4504Z"
+      fill="#211a16" />
+  </svg>
+</button>
+</body>
+</html>
