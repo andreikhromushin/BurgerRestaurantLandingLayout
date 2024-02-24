@@ -1,6 +1,7 @@
 # Burger Restaurant Landing Layout
 
-Here is a layout with beautiful and informative design. You can look and try this on GitHub Pages
+Here is a layout with beautiful and informative design. You can look and try this
+on [GitHub Pages](https://andreikhromushin.github.io/BurgerRestaurantLandingLayout/index.html)
 
 ## Features
 
