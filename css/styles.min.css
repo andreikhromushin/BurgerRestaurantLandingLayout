@@ -1,0 +1,397 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  color: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active,
+select:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Semibold.ttf");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../assets/fonts/Merriweather-Black.ttf");
+}
+html {
+  font-family: "Gilroy", sans-serif;
+}
+
+body {
+  background: #191411;
+  color: #ffffff;
+}
+body section {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body section .section-title {
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+body .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body .button {
+  border-radius: 8px;
+  background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+  width: 260px;
+  height: 62px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #191411;
+  font-size: 18px;
+}
+body .button:hover {
+  background: linear-gradient(96deg, #AC6115 0%, #9E7A19 100%);
+}
+
+#main-section {
+  background-image: url("../assets/img/main-background.png");
+  overflow: hidden;
+}
+#main-section header {
+  padding: 40px 0;
+}
+#main-section header .container {
+  display: flex;
+  align-items: center;
+}
+#main-section header .container nav {
+  margin-left: 190px;
+}
+#main-section header .container nav ul {
+  display: flex;
+  list-style: none;
+}
+#main-section header .container nav ul li {
+  margin-right: 88px;
+}
+#main-section header .container nav ul li a {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#main-section header .container nav ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+#main-section header .container .select {
+  width: 45px;
+  height: 45px;
+  margin-left: auto;
+  padding: 12px 0;
+  font-size: 18px;
+  text-align: center;
+  user-select: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#main-section .main-content {
+  padding: 105px 0 200px 0;
+}
+#main-section .main-content .container {
+  position: relative;
+}
+#main-section .main-content .container .main-info {
+  max-width: 608px;
+}
+#main-section .main-content .container .main-info span {
+  display: inline-block;
+  padding: 12px 16px;
+  background: #d3320f;
+  font-size: 18px;
+  border-radius: 100px;
+}
+#main-section .main-content .container .main-info h1 {
+  margin-bottom: 56px;
+  font-size: 120px;
+  font-family: "Merriweather", sans-serif;
+  line-height: 156px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+#main-section .main-content .container .main-info p {
+  margin-bottom: 56px;
+  font-size: 24px;
+  line-height: 30px;
+}
+#main-section .main-content .container img {
+  position: absolute;
+  top: -125px;
+  left: calc(100% - 990px);
+  pointer-events: none;
+}
+
+#benefits-section {
+  background-image: url("../assets/img/benefits-section/background.png");
+  padding-bottom: 180px;
+}
+#benefits-section .benefits-items {
+  display: grid;
+  justify-content: center;
+  gap: 100px;
+  grid-template-columns: repeat(3, 312px);
+  margin-top: 60px;
+}
+#benefits-section .benefits-items .benefits-item {
+  text-align: center;
+}
+#benefits-section .benefits-items .benefits-item .benefits-item-title {
+  padding: 24px 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+#benefits-section .benefits-items .benefits-item .benefits-item-text {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+#menu-section {
+  background-image: url("../assets/img/menu-section/background.png");
+  background-position: top center;
+  background-size: 1400px;
+  padding-bottom: 180px;
+}
+#menu-section .menu-items {
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  gap: 24px;
+  margin-top: 60px;
+}
+#menu-section .menu-items .menu-item {
+  padding: 30px;
+  background: #211a16;
+  border: 1px solid #353535;
+  border-radius: 16px;
+}
+#menu-section .menu-items .menu-item img {
+  max-width: 100%;
+  height: 250px;
+}
+#menu-section .menu-items .menu-item .menu-item-title {
+  margin: 24px 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+#menu-section .menu-items .menu-item .menu-item-text {
+  height: 90px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 140%;
+}
+#menu-section .menu-items .menu-item .menu-item-extra {
+  display: flex;
+  justify-content: space-between;
+}
+#menu-section .menu-items .menu-item .menu-item-extra .menu-item-price {
+  margin-bottom: 8px;
+  font-size: 32px;
+  line-height: 40px;
+}
+#menu-section .menu-items .menu-item .menu-item-extra .menu-item-weight {
+  font-size: 16px;
+  line-height: 18px;
+  color: #757575;
+}
+#menu-section .menu-items .menu-item .menu-item-extra .menu-order-button {
+  display: flex;
+  justify-content: center;
+  width: 182px;
+}
+#menu-section .menu-items .menu-item .menu-item-extra .menu-order-button span:first-child {
+  margin-right: 10px;
+}
+
+#order-section {
+  background-image: url("../assets/img/order-section/background.png");
+  padding-bottom: 180px;
+}
+#order-section .container {
+  position: relative;
+}
+#order-section .container img {
+  position: absolute;
+  top: 0;
+  right: calc(100% - 764px);
+  z-index: -1;
+  pointer-events: none;
+}
+#order-section .container .order-form {
+  width: 426px;
+  margin: 60px 0 0 674px;
+  padding: 60px 40px;
+  background: #211a16;
+  border: 1px solid #353535;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+#order-section .container .order-form .order-form-text {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+#order-section .container .order-form .order-form-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+#order-section .container .order-form .order-form-inputs .input-wrapper {
+  width: 342px;
+  margin-bottom: 20px;
+  padding: 1px;
+  background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+  border-radius: 8px;
+}
+#order-section .container .order-form .order-form-inputs .input-wrapper input {
+  width: 340px;
+  height: 60px;
+  padding: 16px 10px;
+  background: #211a16;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+#order-section .container .order-form .order-form-inputs .button {
+  width: 344px;
+}
+
+footer {
+  padding: 60px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .rights {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#resetScrollButton {
+  position: fixed;
+  display: none;
+  bottom: 10%;
+  right: 4%;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+  border-radius: 50%;
+}
+#resetScrollButton:hover {
+  background: linear-gradient(96deg, #AC6115 0%, #9E7A19 100%);
+}
+
+/*# sourceMappingURL=styles.min.css.map */
