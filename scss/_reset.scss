@@ -1,106 +1,144 @@
-// Reset base styles
-* {
-  padding: 0;
-  margin: 0;
-  border: none;
+// Root and document
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%; // Prevent font scaling in landscape
+  -moz-text-size-adjust: 100%;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
-// Reset base styles (Links)
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
+// Remove default margin and padding
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// Body defaults
+body {
+  min-height: 100vh;
+  line-height: 1.5; // Improved readability
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Improve media defaults
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Inherit fonts for form controls
+input,
+button,
+textarea,
+select {
+  font: inherit;
   color: inherit;
 }
 
-// Reset base styles (Common)
-aside,
-nav,
-footer,
-header,
-section,
-main {
-  display: block;
+// Remove default button styles
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
 }
 
+// Reset button inner spacing in Firefox
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+// Remove spin buttons for number inputs
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+// Improve text wrapping
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
+  overflow-wrap: break-word;
+}
+
+// Reset heading styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
 
+// Reset list styles
 ul,
-ul li {
+ol {
   list-style: none;
 }
 
-img {
-  vertical-align: top;
+// Reset links
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-img,
-svg {
-  max-width: 100%;
-  height: auto;
-}
-
+// Address styling
 address {
   font-style: normal;
 }
 
-// Reset base styles (Form)
-input,
-textarea,
-button,
-select {
-  font-family: inherit;
-  font-size: inherit;
-  background: none;
-  color: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button,
-input[type="submit"] {
-  display: inline-block;
-  box-shadow: none;
-  background: none;
-  cursor: pointer;
-}
-
-input:focus,
-input:active,
-button:focus,
-button:active,
-select:focus {
-  outline: none;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
+// Label cursor
 label {
   cursor: pointer;
 }
 
+// Legend display
 legend {
   display: block;
+}
+
+// Modern focus styles (accessibility!)
+// Remove outline for mouse users, keep for keyboard users
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+// Respect user's motion preferences (accessibility!)
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

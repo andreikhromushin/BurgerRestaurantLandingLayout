@@ -1,0 +1,10 @@
+{
+  "name": "burger-restaurant-landing-layout",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2"
+  }
+}

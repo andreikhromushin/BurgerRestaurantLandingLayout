@@ -2,6 +2,25 @@
 @import "./vars.scss";
 @import "./base.scss";
 
+section {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section-title {
+    text-align: center;
+    font-family: $font-additional;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 #main-section {
   background-image: url("../assets/img/main-background.png");
   overflow: hidden;
@@ -75,7 +94,7 @@
           font-size: 120px;
           font-family: $font-additional;
           line-height: 156px;
-          letter-spacing: 3.60px;
+          letter-spacing: 3.6px;
           text-transform: uppercase;
         }
 
