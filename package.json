@@ -2,7 +2,10 @@
   "name": "burger-restaurant-landing-layout",
   "version": "1.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:css": "sass --style=compressed scss/styles.scss:css/styles.min.css",
+    "watch:css": "sass --watch scss/styles.scss:css/styles.min.css"
+  },
   "devDependencies": {
     "prettier": "^3.6.2",
     "sass": "^1.93.2"

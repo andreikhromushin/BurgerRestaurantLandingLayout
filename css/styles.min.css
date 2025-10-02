@@ -1,31 +1,76 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: none;
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
   color: inherit;
 }
 
-aside,
-nav,
-footer,
-header,
-section,
-main {
-  display: block;
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
 
 h1,
@@ -33,64 +78,23 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
 
 ul,
-ul li {
+ol {
   list-style: none;
 }
 
-img {
-  vertical-align: top;
-}
-
-img,
-svg {
-  max-width: 100%;
-  height: auto;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 address {
   font-style: normal;
-}
-
-input,
-textarea,
-button,
-select {
-  font-family: inherit;
-  font-size: inherit;
-  background: none;
-  color: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button,
-input[type=submit] {
-  display: inline-block;
-  box-shadow: none;
-  background: none;
-  cursor: pointer;
-}
-
-input:focus,
-input:active,
-button:focus,
-button:active,
-select:focus {
-  outline: none;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
 }
 
 label {
@@ -101,6 +105,25 @@ legend {
   display: block;
 }
 
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 @font-face {
   font-family: "Gilroy";
   src: url("../assets/fonts/Gilroy-Semibold.ttf");
@@ -117,25 +140,10 @@ body {
   background: #191411;
   color: #ffffff;
 }
-body section {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body section .section-title {
-  text-align: center;
-  font-family: "Merriweather", sans-serif;
-  font-size: 64px;
-  line-height: 80px;
-  letter-spacing: 1.92px;
-  text-transform: uppercase;
-}
-body .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-body .button {
+
+.button {
   border-radius: 8px;
-  background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+  background: linear-gradient(96deg, #da8023 0%, #e2b438 100%);
   width: 260px;
   height: 62px;
   padding: 20px;
@@ -149,8 +157,26 @@ body .button {
   color: #191411;
   font-size: 18px;
 }
-body .button:hover {
-  background: linear-gradient(96deg, #AC6115 0%, #9E7A19 100%);
+.button:hover {
+  background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
+}
+
+section {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section .section-title {
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #main-section {
@@ -349,7 +375,7 @@ body .button:hover {
   width: 342px;
   margin-bottom: 20px;
   padding: 1px;
-  background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+  background: linear-gradient(96deg, #da8023 0%, #e2b438 100%);
   border-radius: 8px;
 }
 #order-section .container .order-form .order-form-inputs .input-wrapper input {
@@ -387,11 +413,11 @@ footer .container .rights {
   right: 4%;
   width: 55px;
   height: 55px;
-  background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+  background: linear-gradient(96deg, #da8023 0%, #e2b438 100%);
   border-radius: 50%;
 }
 #resetScrollButton:hover {
-  background: linear-gradient(96deg, #AC6115 0%, #9E7A19 100%);
+  background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
 }
 
 /*# sourceMappingURL=styles.min.css.map */
