@@ -1,0 +1,7 @@
+# Rebuild compiled CSS if SCSS sources are staged, and re-stage the result.
+# Guarantees scss/ and css/styles.min.css cannot drift in any commit.
+
+if git diff --cached --name-only --diff-filter=ACMR | grep -qE '^scss/'; then
+  npm run build:css
+  git add css/styles.min.css css/styles.min.css.map
+fi

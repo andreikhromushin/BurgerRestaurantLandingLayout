@@ -1,0 +1,29 @@
+name: CSS sync check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify-compiled-css:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci --ignore-scripts
+
+      - name: Rebuild CSS
+        run: npm run build:css
+
+      - name: Fail if compiled CSS is out of sync with SCSS
+        run: |
+          if ! git diff --exit-code -- css/styles.min.css css/styles.min.css.map; then
+            echo "::error::css/styles.min.css is out of sync with scss/ — run 'npm run build:css' and commit the result."
+            exit 1
+          fi

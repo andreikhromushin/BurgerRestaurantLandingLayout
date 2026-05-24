@@ -19,7 +19,7 @@ document.getElementById("main-section-action").onclick = function () {
 const resetScrollButton = document.getElementById("resetScrollButton");
 window.addEventListener("scroll", function () {
   if (window.scrollY >= window.innerHeight) {
-    resetScrollButton.style.display = "block";
+    resetScrollButton.style.display = "flex";
   } else {
     resetScrollButton.style.display = "none";
   }

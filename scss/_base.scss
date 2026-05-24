@@ -1,15 +1,21 @@
+@use "vars";
+
+:root {
+  --focus-ring: #{vars.$color-accent};
+}
+
 html {
-  font-family: $font-main;
+  font-family: vars.$font-main;
 }
 
 body {
-  background: $color-background;
-  color: $color-white;
+  background: vars.$color-background;
+  color: vars.$color-white;
 }
 
 .button {
   border-radius: 8px;
-  background: $yellow-gradient;
+  background: vars.$yellow-gradient;
   width: 260px;
   height: 62px;
   padding: 20px;
@@ -20,10 +26,11 @@ body {
   border: none;
   cursor: pointer;
   outline: none;
-  color: $color-background;
+  color: vars.$color-background;
   font-size: 18px;
+  line-height: normal;
 
   &:hover {
-    background: $yellow-gradient-hover;
+    background: vars.$yellow-gradient-hover;
   }
 }
